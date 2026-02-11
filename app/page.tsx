@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   Sparkles,
   Brain,
@@ -711,9 +712,9 @@ export default function Home() {
               <h4 className="font-semibold mb-4">Legal</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Privacy
-                  </a>
+                  <Link href="/privacy-policy" className="hover:text-white transition-colors">
+                    Privacy Policy
+                  </Link>
                 </li>
                 <li>
                   <a href="#" className="hover:text-white transition-colors">
