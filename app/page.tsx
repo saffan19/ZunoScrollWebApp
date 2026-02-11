@@ -72,6 +72,12 @@ export default function Home() {
               >
                 Benefits
               </a>
+              <Link
+                href="/contact"
+                className="text-gray-700 hover:text-blue-600 transition-colors"
+              >
+                Contact
+              </Link>
             </div>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -141,37 +147,7 @@ export default function Home() {
                 </motion.button>
               </div>
 
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8 }}
-                className="mt-12 flex items-center space-x-8"
-              >
-                <div className="flex items-center space-x-2">
-                  <div className="flex -space-x-2">
-                    {[1, 2, 3, 4].map((i) => (
-                      <div
-                        key={i}
-                        className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 border-2 border-white"
-                      />
-                    ))}
-                  </div>
-                  <span className="text-sm text-gray-600 ml-2">
-                    10K+ Active Learners
-                  </span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <Star
-                      key={i}
-                      className="w-5 h-5 fill-yellow-400 text-yellow-400"
-                    />
-                  ))}
-                  <span className="text-sm text-gray-600 ml-2">
-                    4.9/5 Rating
-                  </span>
-                </div>
-              </motion.div>
+
             </motion.div>
 
             <motion.div
@@ -274,37 +250,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-white/50 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8"
-          >
-            {[
-              { icon: Users, value: "10K+", label: "Active Users" },
-              { icon: BookOpen, value: "1M+", label: "Posts Read" },
-              { icon: Target, value: "50K+", label: "Learning Goals" },
-              { icon: Star, value: "4.9", label: "App Rating" },
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                variants={fadeInUp}
-                className="text-center"
-              >
-                <stat.icon className="w-8 h-8 mx-auto mb-3 text-blue-600" />
-                <div className="text-4xl font-bold text-gray-900 mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-gray-600">{stat.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+
 
       {/* Features Section */}
       <section id="features" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -722,9 +668,9 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <Link href="/contact" className="hover:text-white transition-colors">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
