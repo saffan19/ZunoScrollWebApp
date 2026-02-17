@@ -6,22 +6,29 @@ import Link from "next/link";
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+    <main className="min-h-screen bg-background text-gray-100">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-200">
+      <nav className="fixed top-0 w-full bg-surface/80 backdrop-blur-md z-50 border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-                <Shield className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Zuno Scroll
+              <img
+                src="/assets/logo.png"
+                alt="ZunoScroll Logo"
+                className="w-14 h-14"
+                style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.12))' }}
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = 'https://via.placeholder.com/56x56?text=Z';
+                }}
+              />
+              <span className="text-2xl font-bold primary" style={{ fontFamily: 'Inter, sans-serif' }}>
+                ZunoScroll
               </span>
             </Link>
             <Link
               href="/"
-              className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors"
+              className="flex items-center space-x-2 text-text-secondary hover:primary transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to Home</span>
@@ -37,43 +44,44 @@ export default function PrivacyPolicy() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
+            className="card p-8 md:p-12 bg-surface/90 text-gray-100"
           >
             {/* Privacy Policy Content */}
-            <div className="prose prose-lg max-w-none">
+            <div className="prose prose-lg max-w-none text-text-primary">
               <style
                 dangerouslySetInnerHTML={{
                   __html: `
                   [data-custom-class='body'], [data-custom-class='body'] * {
                     background: transparent !important;
+                    color: #f3f4f6 !important;
                   }
                   [data-custom-class='title'], [data-custom-class='title'] * {
                     font-family: Arial !important;
                     font-size: 26px !important;
-                    color: #000000 !important;
+                    color: #fff !important;
                   }
                   [data-custom-class='subtitle'], [data-custom-class='subtitle'] * {
                     font-family: Arial !important;
-                    color: #595959 !important;
+                    color: #cbd5e1 !important;
                     font-size: 14px !important;
                   }
                   [data-custom-class='heading_1'], [data-custom-class='heading_1'] * {
                     font-family: Arial !important;
                     font-size: 19px !important;
-                    color: #000000 !important;
+                    color: #fff !important;
                   }
                   [data-custom-class='heading_2'], [data-custom-class='heading_2'] * {
                     font-family: Arial !important;
                     font-size: 17px !important;
-                    color: #000000 !important;
+                    color: #e0e7ef !important;
                   }
                   [data-custom-class='body_text'], [data-custom-class='body_text'] * {
-                    color: #595959 !important;
+                    color: #e5e7eb !important;
                     font-size: 14px !important;
                     font-family: Arial !important;
                   }
                   [data-custom-class='link'], [data-custom-class='link'] * {
-                    color: #3030F1 !important;
+                    color: #60a5fa !important;
                     font-size: 14px !important;
                     font-family: Arial !important;
                     word-break: break-word !important;
@@ -94,21 +102,21 @@ export default function PrivacyPolicy() {
                     font-size: 2.25rem;
                     font-weight: bold;
                     margin-bottom: 1rem;
-                    color: #1e293b;
+                    color: #fff;
                   }
                   h2 {
                     font-size: 1.875rem;
                     font-weight: bold;
                     margin-top: 2rem;
                     margin-bottom: 1rem;
-                    color: #1e293b;
+                    color: #f3f4f6;
                   }
                   h3 {
                     font-size: 1.5rem;
                     font-weight: bold;
                     margin-top: 1.5rem;
                     margin-bottom: 0.75rem;
-                    color: #334155;
+                    color: #e5e7eb;
                   }
                 `,
                 }}
@@ -475,10 +483,23 @@ export default function PrivacyPolicy() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-gray-200 py-8">
+      <footer className="bg-surface border-t border-border py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-600">
-            © 2026 Zuno Scroll. All rights reserved.
+          <div className="flex justify-center items-center space-x-2 mb-2">
+            <img
+              src="/assets/logo.png"
+              alt="ZunoScroll Logo"
+              className="w-12 h-12"
+              style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.12))' }}
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = 'https://via.placeholder.com/48x48?text=Z';
+              }}
+            />
+            <span className="text-xl font-bold text-primary" style={{ fontFamily: 'Inter, sans-serif' }}>ZunoScroll</span>
+          </div>
+          <p className="text-textSecondary">
+            © 2026 ZunoScroll. All rights reserved.
           </p>
         </div>
       </footer>

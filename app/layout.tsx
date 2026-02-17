@@ -5,26 +5,26 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zuno Scroll - Transform Doom Scrolling into Meaningful Learning",
+  title: "ZunoScroll - Transform Doom Scrolling into Meaningful Learning",
   description:
     "Replace mindless scrolling with personalized, bite-sized learning content. Create custom learning views, track your progress, and turn your scrolling habit into knowledge growth.",
   keywords:
     "learning app, personalized learning, bite-sized learning, educational app, knowledge growth, learning tracker, adaptive learning, scroll learning",
-  authors: [{ name: "Zuno Scroll" }],
-  creator: "Zuno Scroll",
-  publisher: "Zuno Scroll",
+  authors: [{ name: "ZunoScroll" }],
+  creator: "ZunoScroll",
+  publisher: "ZunoScroll",
   openGraph: {
-    title: "Zuno Scroll - Transform Doom Scrolling into Meaningful Learning",
+    title: "ZunoScroll - Transform Doom Scrolling into Meaningful Learning",
     description:
       "Replace mindless scrolling with personalized, bite-sized learning content.",
     url: "https://zunoscroll.com",
-    siteName: "Zuno Scroll",
+    siteName: "ZunoScroll",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zuno Scroll - Transform Doom Scrolling into Meaningful Learning",
+    title: "ZunoScroll - Transform Doom Scrolling into Meaningful Learning",
     description:
       "Replace mindless scrolling with personalized, bite-sized learning content.",
     creator: "@zunoscroll",

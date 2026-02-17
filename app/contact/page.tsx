@@ -52,22 +52,22 @@ export default function Contact() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+    <main className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-200">
+      <nav className="fixed top-0 w-full bg-surface/80 backdrop-blur-md z-50 border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center">
                 <MessageSquare className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Zuno Scroll
+              <span className="text-2xl font-bold primary" style={{ fontFamily: 'Inter, sans-serif' }}>
+                ZunoScroll
               </span>
             </Link>
             <Link
               href="/"
-              className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors"
+              className="flex items-center space-x-2 text-text-secondary hover:primary transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to Home</span>
@@ -85,13 +85,13 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl mb-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl mb-4">
               <Mail className="w-8 h-8 text-white" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">
               Get in Touch
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-text-secondary max-w-2xl mx-auto">
               Have questions or feedback? We'd love to hear from you. Send us a
               message and we'll respond as soon as possible.
             </p>
@@ -101,14 +101,14 @@ export default function Contact() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
+            className="card shadow-xl p-8 md:p-12"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Field */}
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-sm font-semibold text-text-secondary mb-2"
                 >
                   Full Name *
                 </label>
@@ -121,7 +121,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-gray-900 bg-white"
+                    className="w-full pl-12 pr-4 py-3 bordered rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-text-primary bg-surface"
                     placeholder="John Doe"
                   />
                 </div>
@@ -131,7 +131,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-sm font-semibold text-text-secondary mb-2"
                 >
                   Email Address *
                 </label>
@@ -144,7 +144,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-gray-900 bg-white"
+                    className="w-full pl-12 pr-4 py-3 bordered rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-text-primary bg-surface"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -154,7 +154,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="subject"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-sm font-semibold text-text-secondary mb-2"
                 >
                   Subject
                 </label>
@@ -164,7 +164,7 @@ export default function Contact() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-gray-900 bg-white"
+                  className="w-full px-4 py-3 bordered rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-text-primary bg-surface"
                   placeholder="How can we help?"
                 />
               </div>
@@ -173,7 +173,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-sm font-semibold text-text-secondary mb-2"
                 >
                   Message *
                 </label>
@@ -184,7 +184,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none text-gray-900 bg-white"
+                  className="w-full px-4 py-3 bordered rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none text-text-primary bg-surface"
                   placeholder="Tell us what's on your mind..."
                 />
               </div>
@@ -194,7 +194,7 @@ export default function Contact() {
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="p-4 bg-green-50 border border-green-200 rounded-xl text-green-700"
+                  className="p-4 bg-success/10 border border-success rounded-xl text-success"
                 >
                   ✓ Opening your email client...
                 </motion.div>
@@ -204,7 +204,7 @@ export default function Contact() {
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="p-4 bg-red-50 border border-red-200 rounded-xl text-red-700"
+                  className="p-4 bg-error/10 border border-error rounded-xl text-error"
                 >
                   ✗ Something went wrong. Please try again.
                 </motion.div>
@@ -216,7 +216,7 @@ export default function Contact() {
                 disabled={status === "sending"}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className={`w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-xl font-semibold text-lg flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transition-all ${
+                className={`w-full primary-bg py-4 rounded-xl font-semibold text-lg flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transition-all ${
                   status === "sending" ? "opacity-75 cursor-not-allowed" : ""
                 }`}
               >
@@ -233,7 +233,7 @@ export default function Contact() {
                 )}
               </motion.button>
 
-              <p className="text-sm text-gray-500 text-center">
+              <p className="text-sm text-text-tertiary text-center">
                 Your message will be sent to{" "}
                 <a
                   href="mailto:support@zunoscroll.com"
@@ -252,39 +252,39 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-12 grid md:grid-cols-3 gap-6"
           >
-            <div className="bg-white p-6 rounded-xl shadow-md text-center">
-              <Mail className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-2">Email Us</h3>
+            <div className="card p-6 shadow-md text-center">
+              <Mail className="w-8 h-8 primary mx-auto mb-3" />
+              <h3 className="font-semibold text-text-primary mb-2">Email Us</h3>
               <a
                 href="mailto:support@zunoscroll.com"
-                className="text-blue-600 hover:underline"
+                className="primary hover:underline"
               >
                 support@zunoscroll.com
               </a>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-md text-center">
-              <MessageSquare className="w-8 h-8 text-purple-600 mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-2">
+            <div className="card p-6 shadow-md text-center">
+              <MessageSquare className="w-8 h-8 accent mx-auto mb-3" />
+              <h3 className="font-semibold text-text-primary mb-2">
                 Response Time
               </h3>
-              <p className="text-gray-600">Within 24 hours</p>
+              <p className="text-text-secondary">Within 24 hours</p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-md text-center">
-              <User className="w-8 h-8 text-indigo-600 mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-2">Support</h3>
-              <p className="text-gray-600">Available 24/7</p>
+            <div className="card p-6 shadow-md text-center">
+              <User className="w-8 h-8 primary mx-auto mb-3" />
+              <h3 className="font-semibold text-text-primary mb-2">Support</h3>
+              <p className="text-text-secondary">Available 24/7</p>
             </div>
           </motion.div>
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-gray-200 py-8">
+      <footer className="bg-surface border-t border-border py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-600">
-            © 2026 Zuno Scroll. All rights reserved.
+          <p className="text-text-tertiary">
+            © 2026 ZunoScroll. All rights reserved.
           </p>
         </div>
       </footer>
