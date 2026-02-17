@@ -427,7 +427,7 @@ export default function PrivacyPolicy() {
                 <div style={{ lineHeight: "1.5" }}>
                   <span style={{ fontSize: "15px" }}>
                     <span data-custom-class="body_text">
-                      No 58, Hill View Garden Turahalli Uttarahalli
+                      Hill View Garden Turahalli Uttarahalli
                     </span>
                   </span>
                 </div>
