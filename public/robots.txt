@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# AI crawlers — welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://zunoscroll.com/sitemap.xml
+
+# LLM discoverability
+# See https://zunoscroll.com/llms.txt for a machine-readable description of this site.

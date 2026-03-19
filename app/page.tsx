@@ -320,22 +320,22 @@ export default function Home() {
               >
                 <Sparkles className="w-4 h-4" />
                 <span className="text-sm font-semibold">
-                  Transform Your Scrolling Habit
+                  AI-Powered Smart Scroll · Anti-Doomscroll
                 </span>
               </motion.div>
 
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-6 leading-tight">
-                Turn{" "}
+                Learn Anything with{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Doom Scrolling
-                </span>{" "}
-                into Learning
+                  AI Micro-Learning
+                </span>
               </h1>
 
               <p className="text-xl text-text-secondary mb-8 leading-relaxed">
-                Replace mindless scrolling with personalized, bite-sized
-                learning content. Create custom learning paths, track your
-                progress, and make every scroll count.
+                Replace doomscrolling with AI-generated, bite-sized lessons
+                and live RSS feeds. Build a personalized learning path, learn
+                handsfree with audio mode, and upskill anywhere — one smart
+                scroll at a time.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -485,7 +485,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto">
           <motion.div
-          
+
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -494,14 +494,15 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">
-              Powerful Features for{" "}
+              Built to{" "}
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Smart Learning
-              </span>
+                Learn Smarter
+              </span>{" "}
+              — Not Longer
             </h2>
             <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-              Everything you need to transform your scrolling habit into a
-              learning superpower
+              AI micro-learning, live RSS feeds, and adaptive learning paths —
+              everything you need to upskill productively, anywhere
             </p>
           </motion.div>
 
@@ -515,44 +516,44 @@ export default function Home() {
             {[
               {
                 icon: Layers,
-                title: "Custom Learning Views",
+                title: "Learn Anything — Personalized",
                 description:
-                  "Create unlimited personalized learning views tailored to your interests and goals. Each view adapts to your learning pace.",
+                  "Create unlimited learning views and describe any topic. AI builds an adaptive learning path so you can learn anything, at your own pace, with zero guesswork.",
                 color: "from-blue-500 to-blue-600",
               },
               {
                 icon: Brain,
-                title: "AI-Powered Learning Graph",
+                title: "AI Adaptive Learning Graph",
                 description:
-                  "Our intelligent algorithm creates and adapts your learning path based on your progress, ensuring optimal knowledge retention.",
+                  "Our AI infers your goals, structures topics logically, and continuously refines your personalized learning path — so every lesson is exactly right for your level.",
                 color: "from-purple-500 to-blue-500",
               },
               {
                 icon: Zap,
-                title: "Bite-Sized Content",
+                title: "Bite-Sized Micro-Learning",
                 description:
-                  "Learn through scrollable, digestible posts designed for mobile consumption. Perfect for learning on the go.",
+                  "Learn anywhere with short, focused, scrollable lessons designed for mobile. Microlearning that fits into your day — commute, coffee break, or couch.",
                 color: "from-blue-400 to-blue-700",
               },
               {
                 icon: Target,
-                title: "Learn & Feed Screens",
+                title: "Live RSS Feeds Per Topic",
                 description:
-                  "Dedicated spaces for structured learning and staying updated with real-world applications of your topics.",
+                  "Every view includes an AI-curated RSS feed of news, blogs, and industry updates. Learn concepts and stay updated with the real world — in one place.",
                 color: "from-purple-600 to-blue-600",
               },
               {
                 icon: BarChart3,
-                title: "Progress Tracking",
+                title: "Upskill with Smart Scroll",
                 description:
-                  "Visualize your learning journey with detailed analytics, streaks, and milestones for each view.",
+                  "Auto-scroll and audio mode let you learn handsfree. Turn passive screen time into productive upskilling — the anti-doomscroll experience.",
                 color: "from-indigo-500 to-blue-500",
               },
               {
                 icon: Repeat,
-                title: "Smart Revision",
+                title: "Smart Revision & Progress",
                 description:
-                  "Save posts for later and get intelligent revision reminders based on spaced repetition principles.",
+                  "Save posts, track streaks, and get spaced-repetition reminders. Visualize your learning graph and celebrate every milestone on your path to mastery.",
                 color: "from-purple-500 to-blue-700",
               },
             ].map((feature, index) => (
@@ -779,34 +780,34 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
                 Why Choose{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Zuno Scroll?
+                  ZunoScroll?
                 </span>
               </h2>
               <p className="text-xl text-text-secondary mb-8">
-                Turn your biggest time-waster into your biggest asset
+                Learn anything. Upskill anywhere. Turn your biggest time-waster into your greatest asset.
               </p>
 
               <div className="space-y-6">
                 {[
                   {
-                    title: "Transform Wasted Time",
+                    title: "Anti-Doomscroll — Learn Productively",
                     description:
-                      "Convert 2+ hours of daily scrolling into meaningful learning and personal growth.",
+                      "Convert 2+ hours of daily doom-scrolling into productive micro-learning. Every smart scroll builds real knowledge.",
                   },
                   {
-                    title: "Learn Your Way",
+                    title: "AI Personalized Learning Path",
                     description:
-                      "Personalized content that adapts to your pace, interests, and learning style.",
+                      "Your adaptive learning path evolves with you. AI tailors every lesson and RSS update to your goals, pace, and knowledge level.",
                   },
                   {
-                    title: "Stay Motivated",
+                    title: "Learn Handsfree — Anywhere",
                     description:
-                      "Track progress, maintain streaks, and visualize your knowledge growth over time.",
+                      "Audio mode and auto-scroll let you upskill hands-free while commuting, exercising, or doing chores. Learn anywhere, anytime.",
                   },
                   {
-                    title: "Real-World Updates",
+                    title: "Live RSS Feeds & Real-World Updates",
                     description:
-                      "Stay current with news, blogs, and developments in your fields of interest.",
+                      "Every learning view includes an AI-curated RSS feed so theory stays connected to live news, trends, and industry developments.",
                   },
                 ].map((benefit, index) => (
                   <motion.div
@@ -862,13 +863,25 @@ export default function Home() {
                     <span>AI personalization with live feeds</span>
                   </li>
                 </ul>
-                <motion.button
+                <motion.a
+                  href="https://play.google.com/store/apps/details?id=com.zunoscroll.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="w-full primary-bg px-6 py-3.5 rounded-full font-semibold text-base shadow-lg hover:bg-primary-dark transition-colors"
+                  className="w-full primary-bg px-6 py-3.5 rounded-full font-semibold text-base shadow-lg hover:bg-primary-dark transition-colors flex items-center justify-center gap-2"
                 >
-                  Download Now
-                </motion.button>
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M3.18 23.76a2 2 0 0 0 2.07-.22l11.4-6.58-2.53-2.54zM.5 1.6A2 2 0 0 0 0 3v18a2 2 0 0 0 .5 1.4l.07.07 10.08-10.08v-.24L.57 1.53zM20.3 10.37l-2.88-1.66-2.84 2.84 2.84 2.84 2.9-1.67a2 2 0 0 0 0-3.35zm-18.1 12L13.6 11l-2.53-2.53z"/>
+                  </svg>
+                  Download on Google Play
+                </motion.a>
+                <p className="text-center text-sm text-text-secondary mt-3 flex items-center justify-center gap-1">
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                  </svg>
+                  iOS coming soon
+                </p>
               </div>
             </motion.div>
           </div>
@@ -885,30 +898,41 @@ export default function Home() {
           className="max-w-4xl mx-auto text-center text-text-on-primary"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Transform Your Scrolling?
+            Learn Anything. Upskill with AI. Stay Updated via RSS.
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join thousands of learners who have turned their scrolling habit
-            into knowledge growth
+            Join thousands of learners replacing doomscrolling with bite-sized
+            micro-learning, adaptive learning paths, and live RSS feeds
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.button
+            <motion.a
+              href="https://play.google.com/store/apps/details?id=com.zunoscroll.app"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)",
               }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-blue-700 to-purple-700 px-10 py-4 rounded-full font-semibold text-lg shadow-2xl text-white"
+              className="bg-gradient-to-r from-blue-700 to-purple-700 px-10 py-4 rounded-full font-semibold text-lg shadow-2xl text-white flex items-center justify-center gap-2"
             >
-              Get Started Free
-            </motion.button>
-            <motion.button
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3.18 23.76a2 2 0 0 0 2.07-.22l11.4-6.58-2.53-2.54zM.5 1.6A2 2 0 0 0 0 3v18a2 2 0 0 0 .5 1.4l.07.07 10.08-10.08v-.24L.57 1.53zM20.3 10.37l-2.88-1.66-2.84 2.84 2.84 2.84 2.9-1.67a2 2 0 0 0 0-3.35zm-18.1 12L13.6 11l-2.53-2.53z"/>
+              </svg>
+              Download on Google Play
+            </motion.a>
+            <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="border-2 border-white text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-gradient-to-r hover:from-blue-700 hover:to-purple-700 hover:text-white transition-all"
+              className="border-2 border-white text-white px-10 py-4 rounded-full font-semibold text-lg flex flex-col items-center justify-center opacity-80 cursor-default select-none"
             >
-              Learn More
-            </motion.button>
+              <span className="flex items-center gap-2">
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                iOS — Coming Soon
+              </span>
+            </motion.div>
           </div>
         </motion.div>
       </section>
@@ -938,7 +962,7 @@ export default function Home() {
                 </span>
               </div>
               <p className="text-text-secondary">
-                Transform doom scrolling into meaningful learning.
+                AI micro-learning · Live RSS feeds · Learn anything, anywhere · Anti-doomscroll
               </p>
             </div>
 
