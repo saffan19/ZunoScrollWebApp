@@ -477,7 +477,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Features Section. */}
       <section
         ref={featuresSectionRef}
         id="features"
@@ -485,6 +485,7 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto">
           <motion.div
+          
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

@@ -5,6 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+
+
+  
   title: "ZunoScroll - Transform Doom Scrolling into Meaningful Learning",
   description:
     "Replace mindless scrolling with personalized, bite-sized learning content. Create custom learning views, track your progress, and turn your scrolling habit into knowledge growth.",
