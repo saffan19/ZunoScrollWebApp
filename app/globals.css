@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --background: #18181b;
-  --foreground: #f4f4f5;
-  --surface: #232329;
-  --surface-elevated: #2d2d34;
-  --surface-interactive: #35353b;
-  --card: #232329;
-  --card-glass: rgba(35, 35, 41, 0.85);
-  --border: #393944;
-  --primary: #7c3aed;
-  --primary-light: #a78bfa;
-  --primary-dark: #5b21b6;
-  --accent: #f472b6;
-  --accent-dark: #be185d;
-  --success: #22d3ee;
-  --warning: #fbbf24;
-  --error: #f87171;
-  --info: #38bdf8;
-  --text-primary: #f4f4f5;
-  --text-secondary: #a1a1aa;
-  --text-tertiary: #71717a;
+  --background: #000000;
+  --foreground: #ffffff;
+  --surface: #1c1c1e;
+  --surface-elevated: #2c2c2e;
+  --surface-interactive: #3f3f46;
+  --card: #1c1c1e;
+  --card-glass: rgba(28, 28, 30, 0.85);
+  --border: #27272a;
+  --primary: #2851fa;
+  --primary-light: #8dd8ff;
+  --primary-dark: #1a35d0;
+  --accent: #8b5cf6;
+  --accent-dark: #7c3aed;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+  --text-primary: #ffffff;
+  --text-secondary: #ababb4;
+  --text-tertiary: #7c7c84;
   --text-on-primary: #ffffff;
-  --text-on-surface: #f4f4f5;
+  --text-on-surface: #fafafa;
 }
 
 html {

@@ -12,32 +12,41 @@ const config: Config = {
     },
     extend: {
       colors: {
+        // ZunoScroll Brand Palette - Deep Violet to Sky Blue
         primary: {
-          DEFAULT: "#6366F1",
-          light: "#818CF8",
-          dark: "#4F46E5",
-          verylight: "#0F111A",
+          DEFAULT: "#2851FA", // Brand color 1: Deep violet (main brand)
+          light: "#8DD8FF", // Brand color 3: Sky blue (lighter shade)
+          dark: "#1A35D0", // Darker shade for active states
+          verylight: "#0F111A", // Very subtle tint for backgrounds
         },
         accent: {
-          DEFAULT: "#8B5CF6",
+          DEFAULT: "#8B5CF6", // Vibrant purple (complementary)
         },
-        success: "#10B981",
-        warning: "#F59E0B",
-        error: "#EF4444",
-        info: "#3B82F6",
-        background: "#000000",
-        surface: "#1C1C1E",
-        surfaceElevated: "#2C2C2E",
-        surfaceInteractive: "#3F3F46",
-        border: "#27272A",
-        hover: "#3F3F46",
-        textPrimary: "#FFFFFF",
-        textSecondary: "#ABABB4",
-        textTertiary: "#7C7C84",
-        textOnPrimary: "#FFFFFF",
-        textOnSurface: "#FAFAFA",
-        premiumGradientFrom: "#FFD700",
-        premiumGradientTo: "#FF8C00",
+        // Status Colors
+        success: "#10B981", // Emerald green
+        warning: "#F59E0B", // Amber
+        error: "#EF4444", // Refined red
+        info: "#3B82F6", // Cool blue
+        // Background Colors (Dark Mode)
+        background: "#000000", // Pure black
+        surface: "#1C1C1E", // Slightly lighter
+        surfaceElevated: "#2C2C2E", // More prominent elevation
+        surfaceInteractive: "#3F3F46", // For buttons, chips
+        border: "#27272A", // Subtle borders
+        hover: "#3F3F46", // Hover overlay
+        // Text Colors (Dark Mode)
+        textPrimary: "#FFFFFF", // Pure white
+        textSecondary: "#ABABB4", // Brighter for readability
+        textTertiary: "#7C7C84", // Hints, placeholders
+        textOnPrimary: "#FFFFFF", // White on primary
+        textOnSurface: "#FAFAFA", // Pure white
+        // Special Colors
+        shimmerBase: "#18181B",
+        shimmerHighlight: "#3F3F46",
+        overlay: "rgba(0, 0, 0, 0.75)",
+        glass: "rgba(255, 255, 255, 0.1)",
+        shadow: "rgba(0, 0, 0, 0.15)",
+        scrim: "rgba(0, 0, 0, 0.32)",
       },
       borderRadius: {
         xl: "1.25rem",
@@ -46,7 +55,7 @@ const config: Config = {
         glass: "1.5rem",
       },
       boxShadow: {
-        glass: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+        glass: "0 8px 32px 0 rgba(40, 81, 250, 0.15)",
       },
       animation: {
         float: "float 6s ease-in-out infinite",

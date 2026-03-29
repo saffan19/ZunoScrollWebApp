@@ -288,6 +288,12 @@ export default function Home() {
               >
                 Benefits
               </a>
+              <a
+                href="#download"
+                className="text-text-secondary hover:primary transition-colors font-semibold"
+              >
+                Download
+              </a>
               <Link
                 href="/contact"
                 className="text-text-secondary hover:primary transition-colors"
@@ -339,25 +345,18 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <motion.button
+                <motion.a
+                  href="#download"
                   whileHover={{
                     scale: 1.05,
                     boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)",
                   }}
                   whileTap={{ scale: 0.95 }}
-                  className="primary-bg px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center space-x-2 shadow-lg hover:bg-primary-dark"
+                  className="primary-bg px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center space-x-2 shadow-lg hover:bg-primary-dark transition-colors"
                 >
                   <span>Get Started Free</span>
                   <ArrowRight className="w-5 h-5" />
-                </motion.button>
-
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="border-2 bordered text-text-secondary px-8 py-4 rounded-full font-semibold text-lg hover:border-primary hover:primary transition-colors"
-                >
-                  Watch Demo
-                </motion.button>
+                </motion.a>
               </div>
             </motion.div>
 
@@ -405,33 +404,26 @@ export default function Home() {
                     </div>
                   </motion.div>
 
-                  {/* Center Rotating Logo: below cards on mobile, center on md+ */}
+                  {/* Center Logo: below cards on mobile, center on md+ */}
                   <div className="w-full flex flex-col items-center mt-6 md:mt-0 md:col-span-1 md:row-start-1 md:col-start-2">
-                    <div className="w-full aspect-square bg-gradient-to-br from-surface via-surface-elevated to-surface-interactive rounded-3xl flex items-center justify-center mb-4 md:mb-0">
-                      <div className="text-center">
-                        <motion.div
-                          animate={{ rotate: 360 }}
-                          transition={{
-                            duration: 20,
-                            repeat: Infinity,
-                            ease: "linear",
-                          }}
-                          className="w-44 h-44 mx-auto flex items-center justify-center"
-                        >
-                          <img
-                            src="/assets/logo.png"
-                            alt="ZunoScroll Logo"
-                            className="w-36 h-36"
-                            style={{
-                              filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.18))",
-                            }}
-                          />
-                        </motion.div>
-                        <p className="text-text-secondary text-lg mt-4 md:mt-8">
-                          Your Learning Journey Awaits
-                        </p>
-                      </div>
-                    </div>
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.8, delay: 0.3 }}
+                      className="w-32 h-32 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl flex items-center justify-center mb-4 md:mb-0 border border-blue-500/20"
+                    >
+                      <img
+                        src="/assets/logo.png"
+                        alt="ZunoScroll Logo"
+                        className="w-24 h-24"
+                        style={{
+                          filter: "drop-shadow(0 4px 12px rgba(59, 130, 246, 0.15))",
+                        }}
+                      />
+                    </motion.div>
+                    <p className="text-text-secondary text-sm mt-4 font-medium text-center">
+                      AI-Powered Learning
+                    </p>
                   </div>
 
                   {/* Right Card */}
@@ -474,6 +466,45 @@ export default function Home() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* YouTube Video Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-surface-elevated">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+              See ZunoScroll in Action
+            </h2>
+            <p className="text-lg text-text-secondary">
+              Watch how ZunoScroll transforms your scrolling habit into meaningful learning
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border"
+          >
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/MvvkCUlTEU0?si=KnldzenayX0LZS8n"
+              title="ZunoScroll - AI-Powered Micro-Learning"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full"
+            />
+          </motion.div>
         </div>
       </section>
 
@@ -767,8 +798,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section id="benefits" className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* Benefits Section & Download */}
+      <section id="download" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
