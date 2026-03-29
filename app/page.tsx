@@ -10,7 +10,7 @@ import {
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import {
   Sparkles,
   Brain,
@@ -26,6 +26,8 @@ import {
   Users,
   BookOpen,
   Repeat,
+  Menu,
+  X,
 } from "lucide-react";
 import viewCreationScreenshot from "@/assets/Screenshots/View_Creation_Page.png";
 import topicSelectionScreenshot from "@/assets/Screenshots/Topics selection Page.png";
@@ -54,6 +56,7 @@ type AppJourneyStep = {
 };
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const appJourneySteps: AppJourneyStep[] = [
     {
       id: "create-view",
@@ -254,7 +257,7 @@ export default function Home() {
               <img
                 src="/assets/logo.png"
                 alt="ZunoScroll Logo"
-                className="w-14 h-14"
+                className="w-10 h-10"
                 style={{ filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.12))" }}
                 onError={(e) => {
                   e.currentTarget.onerror = null;
@@ -269,6 +272,7 @@ export default function Home() {
                 ZunoScroll
               </span>
             </div>
+            {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
               <a
                 href="#features"
@@ -301,7 +305,64 @@ export default function Home() {
                 Contact
               </Link>
             </div>
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden p-2 rounded-lg hover:bg-surface-interactive transition-colors"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <X className="w-6 h-6 text-text-primary" />
+              ) : (
+                <Menu className="w-6 h-6 text-text-primary" />
+              )}
+            </button>
           </div>
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.2 }}
+              className="md:hidden pb-4 space-y-3"
+            >
+              <a
+                href="#features"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-text-secondary hover:primary transition-colors py-2"
+              >
+                Features
+              </a>
+              <a
+                href="#how-it-works"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-text-secondary hover:primary transition-colors py-2"
+              >
+                How It Works
+              </a>
+              <a
+                href="#benefits"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-text-secondary hover:primary transition-colors py-2"
+              >
+                Benefits
+              </a>
+              <a
+                href="#cta"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-text-secondary hover:primary transition-colors font-semibold py-2 primary-bg px-4 rounded-full text-center"
+              >
+                Download
+              </a>
+              <Link
+                href="/contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-text-secondary hover:primary transition-colors py-2"
+              >
+                Contact
+              </Link>
+            </motion.div>
+          )}
         </div>
       </motion.nav>
 
