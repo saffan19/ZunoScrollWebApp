@@ -289,7 +289,7 @@ export default function Home() {
                 Benefits
               </a>
               <a
-                href="#download"
+                href="#cta"
                 className="text-text-secondary hover:primary transition-colors font-semibold"
               >
                 Download
@@ -346,7 +346,7 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.a
-                  href="#download"
+                  href="#cta"
                   whileHover={{
                     scale: 1.05,
                     boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)",
@@ -798,8 +798,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Benefits Section & Download */}
-      <section id="download" className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* Benefits Section */}
+      <section id="benefits" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -864,63 +864,12 @@ export default function Home() {
                 ))}
               </div>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.65, ease: premiumEase }}
-              className="w-full"
-            >
-              <div className="card-solid w-full max-w-xl mx-auto rounded-3xl p-6 sm:p-7 border border-border/90 shadow-2xl">
-                <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-text-primary">
-                  Start Learning Today
-                </h3>
-                <p className="text-text-secondary mb-5">
-                  Launch your first AI-powered view in minutes and turn daily
-                  scrolling into measurable progress.
-                </p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-3 text-text-primary">
-                    <CheckCircle2 className="w-5 h-5 text-success" />
-                    <span>Free to start, no credit card required</span>
-                  </li>
-                  <li className="flex items-center gap-3 text-text-primary">
-                    <CheckCircle2 className="w-5 h-5 text-success" />
-                    <span>Unlimited custom learning views</span>
-                  </li>
-                  <li className="flex items-center gap-3 text-text-primary">
-                    <CheckCircle2 className="w-5 h-5 text-success" />
-                    <span>AI personalization with live feeds</span>
-                  </li>
-                </ul>
-                <motion.a
-                  href="https://play.google.com/store/apps/details?id=com.zunoscroll.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="w-full primary-bg px-6 py-3.5 rounded-full font-semibold text-base shadow-lg hover:bg-primary-dark transition-colors flex items-center justify-center gap-2"
-                >
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M3.18 23.76a2 2 0 0 0 2.07-.22l11.4-6.58-2.53-2.54zM.5 1.6A2 2 0 0 0 0 3v18a2 2 0 0 0 .5 1.4l.07.07 10.08-10.08v-.24L.57 1.53zM20.3 10.37l-2.88-1.66-2.84 2.84 2.84 2.84 2.9-1.67a2 2 0 0 0 0-3.35zm-18.1 12L13.6 11l-2.53-2.53z"/>
-                  </svg>
-                  Download on Google Play
-                </motion.a>
-                <p className="text-center text-sm text-text-secondary mt-3 flex items-center justify-center gap-1">
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                  </svg>
-                  iOS coming soon
-                </p>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section id="cta" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-purple-600">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
