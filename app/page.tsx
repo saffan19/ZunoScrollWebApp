@@ -504,7 +504,7 @@ export default function Home() {
 
             {/* dotted rule */}
             <div className="dotted-rule mt-14 mb-8" style={{ borderColor: "rgba(242,232,216,0.12)" }} />
-            <p style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "rgba(242,232,216,0.35)", letterSpacing: "0.1em" }}>FREE · NO ADS · ANDROID &amp; iOS</p>
+            <p style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "rgba(242,232,216,0.35)", letterSpacing: "0.1em" }}>FREE · ANDROID &amp; iOS</p>
           </motion.div>
         </div>
       </section>
