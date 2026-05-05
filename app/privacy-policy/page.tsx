@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-background text-gray-100">
+    <main className="min-h-screen" style={{ background: "var(--paper)", color: "var(--ink)" }}>
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-surface/80 backdrop-blur-md z-50 border-b border-border">
+      <nav className="fixed top-0 w-full backdrop-blur-md z-50" style={{ background: "rgba(242,232,216,0.88)", borderBottom: "1px solid var(--rule)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center space-x-2">
@@ -23,16 +23,16 @@ export default function PrivacyPolicy() {
                     "https://via.placeholder.com/56x56?text=Z";
                 }}
               />
-              <span
-                className="text-2xl font-bold primary"
-                style={{ fontFamily: "Inter, sans-serif" }}
+                <span
+                className="text-2xl font-bold"
+                style={{ fontFamily: "'DM Sans', sans-serif", color: "var(--ink)" }}
               >
                 ZunoScroll
               </span>
             </Link>
             <Link
               href="/"
-              className="flex items-center space-x-2 text-text-secondary hover:primary transition-colors"
+              className="flex items-center space-x-2 transition-colors" style={{ color: "var(--ink-soft)" } as React.CSSProperties}
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to Home</span>
@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="card p-8 md:p-12 bg-surface/90 text-gray-100"
+            className="p-8 md:p-12 rounded-[14px]" style={{ background: "var(--paper-soft)", border: "1px solid var(--rule)" }}
           >
             {/* Privacy Policy Content */}
             <div className="prose prose-lg max-w-none text-text-primary">
@@ -57,35 +57,35 @@ export default function PrivacyPolicy() {
                   __html: `
                   [data-custom-class='body'], [data-custom-class='body'] * {
                     background: transparent !important;
-                    color: #f3f4f6 !important;
+                    color: #1F1A17 !important;
                   }
                   [data-custom-class='title'], [data-custom-class='title'] * {
                     font-family: Arial !important;
                     font-size: 26px !important;
-                    color: #fff !important;
+                    color: #1F1A17 !important;
                   }
                   [data-custom-class='subtitle'], [data-custom-class='subtitle'] * {
                     font-family: Arial !important;
-                    color: #cbd5e1 !important;
+                    color: #5A4A3D !important;
                     font-size: 14px !important;
                   }
                   [data-custom-class='heading_1'], [data-custom-class='heading_1'] * {
                     font-family: Arial !important;
                     font-size: 19px !important;
-                    color: #fff !important;
+                    color: #1F1A17 !important;
                   }
                   [data-custom-class='heading_2'], [data-custom-class='heading_2'] * {
                     font-family: Arial !important;
                     font-size: 17px !important;
-                    color: #e0e7ef !important;
+                    color: #1F1A17 !important;
                   }
                   [data-custom-class='body_text'], [data-custom-class='body_text'] * {
-                    color: #e5e7eb !important;
+                    color: #3D2F27 !important;
                     font-size: 14px !important;
                     font-family: Arial !important;
                   }
                   [data-custom-class='link'], [data-custom-class='link'] * {
-                    color: #60a5fa !important;
+                    color: #C8553D !important;
                     font-size: 14px !important;
                     font-family: Arial !important;
                     word-break: break-word !important;
@@ -106,21 +106,21 @@ export default function PrivacyPolicy() {
                     font-size: 2.25rem;
                     font-weight: bold;
                     margin-bottom: 1rem;
-                    color: #fff;
+                    color: #1F1A17;
                   }
                   h2 {
                     font-size: 1.875rem;
                     font-weight: bold;
                     margin-top: 2rem;
                     margin-bottom: 1rem;
-                    color: #f3f4f6;
+                    color: #1F1A17;
                   }
                   h3 {
                     font-size: 1.5rem;
                     font-weight: bold;
                     margin-top: 1.5rem;
                     margin-bottom: 0.75rem;
-                    color: #e5e7eb;
+                    color: #3D2F27;
                   }
                 `,
                 }}
