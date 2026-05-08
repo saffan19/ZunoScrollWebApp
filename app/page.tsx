@@ -548,6 +548,9 @@ export default function Home() {
               <Link href="/privacy-policy" style={{ display: "block", fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--ink-soft)", marginBottom: 8, textDecoration: "none", transition: "color 220ms" }}
                 onMouseEnter={e=>(e.currentTarget.style.color="var(--terracotta)")}
                 onMouseLeave={e=>(e.currentTarget.style.color="var(--ink-soft)")}>Privacy Policy</Link>
+              <Link href="/terms-of-use" style={{ display: "block", fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--ink-soft)", marginBottom: 8, textDecoration: "none", transition: "color 220ms" }}
+                onMouseEnter={e=>(e.currentTarget.style.color="var(--terracotta)")}
+                onMouseLeave={e=>(e.currentTarget.style.color="var(--ink-soft)")}>Terms of Use</Link>
               <Link href="/contact" style={{ display: "block", fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--ink-soft)", textDecoration: "none", transition: "color 220ms" }}
                 onMouseEnter={e=>(e.currentTarget.style.color="var(--terracotta)")}
                 onMouseLeave={e=>(e.currentTarget.style.color="var(--ink-soft)")}>Contact</Link>
