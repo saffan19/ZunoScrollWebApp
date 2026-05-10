@@ -92,29 +92,29 @@ export default function PosterDark() {
               alt="ZunoScroll"
               style={{ width: 36, height: 36, filter: "drop-shadow(0 1px 6px rgba(200,85,61,0.4))" }}
             />
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, fontWeight: 700, color: "#C8A882" }}>
+            <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, fontWeight: 700, color: "#D9BFA0" }}>
               ZunoScroll
             </span>
           </div>
 
           {/* Eyebrow */}
-          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "#E07055", margin: 0 }}>
+          <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "#E8806A", margin: 0 }}>
             AI Micro-Learning &nbsp;·&nbsp; Adaptive Courses
           </p>
 
           {/* Headline */}
-          <h1 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 54, fontWeight: 800, lineHeight: 1.06, letterSpacing: "-0.02em", color: "#F0E6D3", margin: 0 }}>
+          <h1 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 54, fontWeight: 800, lineHeight: 1.06, letterSpacing: "-0.02em", color: "#F7EEE3", margin: 0 }}>
             Stop{" "}
-            <span style={{ color: "#E07055" }}>Doomscrolling.</span>
+            <span style={{ color: "#E8806A" }}>Doomscrolling.</span>
             <br />
             Scroll Smarter.
           </h1>
 
           {/* Body */}
-          <p style={{ fontSize: 15, lineHeight: 1.65, color: "#9A8878", margin: 0, maxWidth: 400 }}>
+          <p style={{ fontSize: 15, lineHeight: 1.65, color: "#B09A8A", margin: 0, maxWidth: 400 }}>
             Build your own adaptive course. Get{" "}
-            <strong style={{ color: "#C8A882" }}>AI-generated, bite-sized lessons</strong> and a{" "}
-            <strong style={{ color: "#C8A882" }}>personalized RSS feed</strong> for what you&apos;re
+            <strong style={{ color: "#D9BFA0" }}>AI-generated, bite-sized lessons</strong> and a{" "}
+            <strong style={{ color: "#D9BFA0" }}>personalized RSS feed</strong> for what you&apos;re
             learning, connected to the real world, one scroll at a time.
           </p>
 
@@ -137,7 +137,7 @@ export default function PosterDark() {
                   border: "1px solid rgba(255,255,255,0.1)",
                   fontSize: 12,
                   fontWeight: 500,
-                  color: "#9A8878",
+                  color: "#B09A8A",
                 }}
               >
                 <span>{emoji}</span>
@@ -147,7 +147,7 @@ export default function PosterDark() {
           </div>
 
           {/* URL */}
-          <p style={{ fontSize: 11, color: "#5A4A3D", fontFamily: "monospace", letterSpacing: "0.1em", textTransform: "uppercase", marginTop: 8 }}>
+          <p style={{ fontSize: 11, color: "#6E5C50", fontFamily: "monospace", letterSpacing: "0.1em", textTransform: "uppercase", marginTop: 8 }}>
             zunoscroll.com
           </p>
         </motion.div>

@@ -557,10 +557,38 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="dotted-rule mb-6" />
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-3">
-            <p style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--ink-mute)", letterSpacing: "0.08em" }}>© 2026 ZUNOSCROLL — ALL RIGHTS RESERVED</p>
-            <p style={{ fontFamily: "var(--font-script)", fontSize: 14, color: "var(--terracotta)", fontWeight: 600 }}>Made for learners everywhere ✦</p>
+          <div className="dotted-rule mb-8" />
+
+          {/* Recognized by + copyright row */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-5">
+            {/* Badge */}
+            <a
+              href="https://startupfa.me/s/zunoscroll?utm_source=zunoscroll.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 group"
+              style={{ textDecoration: "none" }}
+            >
+              <span style={{ fontFamily: "var(--font-mono)", fontSize: 9, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--ink-mute)", whiteSpace: "nowrap", transition: "color 200ms" }}
+                onMouseEnter={e => (e.currentTarget.style.color = "var(--ink-soft)")}
+                onMouseLeave={e => (e.currentTarget.style.color = "var(--ink-mute)")}
+              >Featured on</span>
+              <img
+                src="https://startupfa.me/badges/featured/light-small.webp"
+                alt="ZunoScroll - Featured on Startup Fame"
+                height={36}
+                width={224}
+                style={{ filter: "grayscale(1)", opacity: 0.5, transition: "opacity 200ms, filter 200ms" }}
+                onMouseEnter={e => { e.currentTarget.style.opacity = "1"; e.currentTarget.style.filter = "none"; }}
+                onMouseLeave={e => { e.currentTarget.style.opacity = "0.5"; e.currentTarget.style.filter = "grayscale(1)"; }}
+              />
+            </a>
+
+            {/* Copyright + tagline */}
+            <div className="flex flex-col sm:items-end items-center gap-1">
+              <p style={{ fontFamily: "var(--font-script)", fontSize: 14, color: "var(--terracotta)", fontWeight: 600, margin: 0 }}>Made for learners everywhere ✦</p>
+              <p style={{ fontFamily: "var(--font-mono)", fontSize: 9, color: "var(--ink-mute)", letterSpacing: "0.08em", margin: 0 }}>© 2026 ZUNOSCROLL — ALL RIGHTS RESERVED</p>
+            </div>
           </div>
         </div>
       </footer>
