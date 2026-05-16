@@ -561,28 +561,43 @@ export default function Home() {
 
           {/* Recognized by + copyright row */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-5">
-            {/* Badge */}
-            <a
-              href="https://startupfa.me/s/zunoscroll?utm_source=zunoscroll.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 group"
-              style={{ textDecoration: "none" }}
-            >
-              <span style={{ fontFamily: "var(--font-mono)", fontSize: 9, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--ink-mute)", whiteSpace: "nowrap", transition: "color 200ms" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "var(--ink-soft)")}
-                onMouseLeave={e => (e.currentTarget.style.color = "var(--ink-mute)")}
-              >Featured on</span>
-              <img
-                src="https://startupfa.me/badges/featured/light-small.webp"
-                alt="ZunoScroll - Featured on Startup Fame"
-                height={36}
-                width={224}
-                style={{ filter: "grayscale(1)", opacity: 0.5, transition: "opacity 200ms, filter 200ms" }}
-                onMouseEnter={e => { e.currentTarget.style.opacity = "1"; e.currentTarget.style.filter = "none"; }}
-                onMouseLeave={e => { e.currentTarget.style.opacity = "0.5"; e.currentTarget.style.filter = "grayscale(1)"; }}
-              />
-            </a>
+            {/* Badges row */}
+            <div className="flex items-center gap-6">
+              {/* Startup Fame badge */}
+              <a
+                href="https://startupfa.me/s/zunoscroll?utm_source=zunoscroll.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center group"
+                style={{ textDecoration: "none" }}
+              >
+                <img
+                  src="https://startupfa.me/badges/featured/light-small.webp"
+                  alt="ZunoScroll - Featured on Startup Fame"
+                  height={36}
+                  width={224}
+                  style={{ filter: "grayscale(1)", opacity: 0.5, transition: "opacity 200ms, filter 200ms" }}
+                  onMouseEnter={e => { e.currentTarget.style.opacity = "1"; e.currentTarget.style.filter = "none"; }}
+                  onMouseLeave={e => { e.currentTarget.style.opacity = "0.5"; e.currentTarget.style.filter = "grayscale(1)"; }}
+                />
+              </a>
+              {/* SaaSHub badge */}
+              <a
+                href="https://www.saashub.com/zunoscroll?utm_source=badge&utm_campaign=badge&utm_content=zunoscroll&badge_variant=color&badge_kind=approved"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center group"
+                style={{ textDecoration: "none" }}
+              >
+                <img
+                  src="https://cdn-b.saashub.com/img/badges/approved-color.png?v=1"
+                  alt="ZunoScroll badge"
+                  style={{ maxWidth: 150, filter: "grayscale(1)", opacity: 0.5, transition: "opacity 200ms, filter 200ms" }}
+                  onMouseEnter={e => { e.currentTarget.style.opacity = "1"; e.currentTarget.style.filter = "none"; }}
+                  onMouseLeave={e => { e.currentTarget.style.opacity = "0.5"; e.currentTarget.style.filter = "grayscale(1)"; }}
+                />
+              </a>
+            </div>
 
             {/* Copyright + tagline */}
             <div className="flex flex-col sm:items-end items-center gap-1">
