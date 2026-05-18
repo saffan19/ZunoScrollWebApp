@@ -563,6 +563,24 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-5">
             {/* Badges row */}
             <div className="flex items-center gap-6">
+              {/* Product Hunt badge */}
+              <a
+                href="https://www.producthunt.com/products/zunoscroll?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-zunoscroll"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center group"
+                style={{ textDecoration: "none" }}
+              >
+                <img
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1112443&theme=light&t=1779077346177"
+                  alt="ZunoScroll on Product Hunt"
+                  height={36}
+                  width={200}
+                  style={{ filter: "grayscale(1)", opacity: 0.5, transition: "opacity 200ms, filter 200ms" }}
+                  onMouseEnter={e => { e.currentTarget.style.opacity = "1"; e.currentTarget.style.filter = "none"; }}
+                  onMouseLeave={e => { e.currentTarget.style.opacity = "0.5"; e.currentTarget.style.filter = "grayscale(1)"; }}
+                />
+              </a>
               {/* Startup Fame badge */}
               <a
                 href="https://startupfa.me/s/zunoscroll?utm_source=zunoscroll.com"
